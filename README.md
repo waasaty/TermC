@@ -1,4 +1,4 @@
-# 🚀 SysCLI
+# 🚀 termc
 
 A tiny Python library that makes terminal apps look way cooler with almost no effort.
 
@@ -11,13 +11,13 @@ Just clean banners, colorful messages, menus, separators, and stylish prompts.
 ## 📦 Installation
 
 ```bash
-pip install syscli
+pip install termc
 ```
 
 Or clone the repository:
 
 ```bash
-git clone https://github.com/waasaty/SysCLI.git
+git clone https://github.com/waasaty/termc.git
 ```
 
 ---
@@ -25,17 +25,17 @@ git clone https://github.com/waasaty/SysCLI.git
 ## 🚀 Quick Start
 
 ```python
-import SysCLI
+import termc
 
-SysCLI.Config.program_name("MyCoolApp")
+termc.Config.program_name("MyCoolApp")
 
-SysCLI.print_header()
+termc.print_header()
 
-SysCLI.print_info("Application started")
-SysCLI.print_succes("Everything works!")
-SysCLI.print_warn("Something looks suspicious...")
-SysCLI.print_error("Oops, an error occurred")
-SysCLI.print_dbg("Debug message")
+termc.print_info("Application started")
+termc.print_succes("Everything works!")
+termc.print_warn("Something looks suspicious...")
+termc.print_error("Oops, an error occurred")
+termc.print_dbg("Debug message")
 ```
 
 Output:
@@ -59,12 +59,12 @@ Output:
 Create nice-looking input prompts:
 
 ```python
-import SysCLI
+import termc
 
-SysCLI.input_start_header()
+termc.input_start_header()
 
-name = SysCLI.input_middle("Enter your name")
-age = SysCLI.input_bottom("Enter your age")
+name = termc.input_middle("Enter your name")
+age = termc.input_bottom("Enter your age")
 ```
 
 Example:
@@ -80,7 +80,7 @@ Example:
 ## 📋 Menus
 
 ```python
-SysCLI.print_menu(
+termc.print_menu(
     "Main Menu",
     [
         "Start",
@@ -107,7 +107,7 @@ Output:
 ## 🎨 Banners
 
 ```python
-SysCLI.print_banner("""
+termc.print_banner("""
 Welcome to
 My Awesome App
 """)
@@ -120,7 +120,7 @@ My Awesome App
 Change the displayed program name:
 
 ```python
-SysCLI.Config.program_name("SuperApp")
+termc.Config.program_name("SuperApp")
 ```
 
 Now prompts and headers will use:
@@ -131,7 +131,7 @@ username@SuperApp
 
 ---
 
-## 💡 Why SysCLI?
+## 💡 Why termc?
 
 Because writing:
 
@@ -141,7 +141,7 @@ print("[INFO] Application started")
 
 for the 500th time gets boring.
 
-SysCLI gives your terminal projects a cleaner and more professional look while keeping everything simple.
+termc gives your terminal projects a cleaner and more professional look while keeping everything simple.
 
 ---
 
@@ -159,8 +159,5 @@ Contributions are always welcome.
 
 MIT License
 
-<<<<<<< HEAD
+---
 Do whatever you want, just don't claim you wrote it 😄
-=======
-Do whatever you want, just don't claim you wrote it 😄
->>>>>>> 9351e090cf801d9a451f4e525bcdb3561d444c76

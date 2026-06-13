@@ -2,6 +2,7 @@
 from colorama import Fore, Style, init
 import getpass
 from datetime import datetime
+import sys
 
 init(autoreset=True)    
 
@@ -105,3 +106,12 @@ def menu(title: str, options: list[str]) -> None:
         print(f'{termc_C_PRIMARY}│{Style.RESET_ALL} {line.ljust(width - 1)}{termc_C_PRIMARY}│{Style.RESET_ALL}')
 
     print(f'{termc_C_PRIMARY}╰{"─" * width}╯{Style.RESET_ALL}')
+
+def progress_bar(current: int, total: int, width: int = 30) -> None:
+    filled = int(width * current / total)
+    bar = "█" * filled + "░" * (width - filled)
+    pct = int(100 * current / total)
+    sys.stdout.write(f'\r{termc_C_PRIMARY}[{bar}] {pct}%{Style.RESET_ALL}')
+    sys.stdout.flush()
+    if current == total:
+        print()

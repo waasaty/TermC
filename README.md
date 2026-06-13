@@ -1,4 +1,4 @@
-# 🚀 termc
+# 🚀 TermC
 
 A tiny Python library that makes terminal apps look way cooler with almost no effort.
 
@@ -10,11 +10,11 @@ Just clean banners, colorful messages, menus, separators, and stylish prompts.
 
 ## 📦 Installation
 
-```bash
+<!-- ```bash
 pip install termc
 ```
 
-Or clone the repository:
+Or clone the repository: -->
 
 ```bash
 git clone https://github.com/waasaty/termc.git
@@ -32,7 +32,7 @@ termc.termcConfig.program_name("MyCoolApp")
 termc.header()
 
 termc.info("Application started")
-termc.succes("Everything works!")
+termc.success("Everything works!")
 termc.warn("Something looks suspicious...")
 termc.error("Oops, an error occurred")
 termc.dbg("Debug message")
@@ -46,7 +46,7 @@ Output:
 ╰─────────────╯
 
 [i] information
-[✓] succes
+[✓] success
 [!] warning
 [✗] error
 [~] debug
@@ -113,6 +113,15 @@ My Awesome App
 """)
 ```
 
+Output:
+
+```
+╭────────────────╮
+│ Welcome to     │
+│ My Awesome App │
+╰────────────────╯
+```
+
 ---
 
 ## 🔧 Configuration
@@ -120,7 +129,7 @@ My Awesome App
 Change the displayed program name:
 
 ```python
-termc.Config.program_name("SuperApp")
+termc.termcConfig.program_name("SuperApp")
 ```
 
 Now prompts and headers will use:
@@ -160,4 +169,4 @@ Contributions are always welcome.
 MIT License
 
 ---
-Do whatever you want, just don't claim you wrote it 😄
+Do whatever you want, just don't claim you wrote it ;)

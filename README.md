@@ -1,6 +1,6 @@
 ![Banner](assets/banner.png)
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.1.0-blue" />
+  <img src="https://img.shields.io/badge/version-0.1.1-blue" />
   <img src="https://img.shields.io/badge/license-MIT-green" />
   <img src="https://img.shields.io/badge/PyPI%20status-active-green" />
 </p>
@@ -13,7 +13,7 @@ Just clean banners, colorful messages, menus, separators, and stylish prompts.
 ---
 
 ## PyPI
-https://pypi.org/project/termc/0.1.0/
+https://pypi.org/project/termc/
 
 ---
 

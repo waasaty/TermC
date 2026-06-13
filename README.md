@@ -1,5 +1,8 @@
 ![Banner](assets/banner.png)
-![Version](https://img.shields.io/badge/version-0.0.1-blue)
+<p align="center">
+  <img src="https://img.shields.io/badge/version-0.0.1-blue" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+</p>
 A tiny Python library that makes terminal apps look way cooler with almost no effort.
 
 No more boring `print()` spam.
@@ -48,12 +51,6 @@ Have an idea?
 Open an issue or submit a pull request.
 
 Contributions are always welcome.
-
----
-
-## 📜 License
-
-![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
 Do whatever you want, just don't claim you wrote it ;)

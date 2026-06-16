@@ -7,7 +7,7 @@
 A tiny Python library that makes terminal apps look way cooler with almost no effort.
 
 No more boring `print()` spam.
-No more ugly CLI menus.
+No more ugly TUI menus.
 Just clean banners, colorful messages, menus, separators, and stylish prompts.
 
 ---

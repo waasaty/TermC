@@ -149,7 +149,7 @@ def log(level: str = 'info', msg: str = None, Timestamp: bool = None):
 
 
 def option(number: int, message: str) -> str:
-    return f'{termc_C_PRIMARY}[{Style.BRIGHT}{number}{Style.NORMAL}]{Style.RESET_ALL} {message}'
+    print(f'{termc_C_PRIMARY}[{Style.BRIGHT}{number}{Style.NORMAL}]{Style.RESET_ALL} {message}')
 
 
 def banner(text: str, color: str = None) -> None:
@@ -221,7 +221,7 @@ def fatalerror(label="FATAL ERROR", message="FATAL ERROR", center=True, clear: b
 
     top_line = f'─ {label} '
     top_line += '─' * (naj_linia - len(top_line) + 2)
-    print(f'{spacje}{termc_C_ERR}╭{top_line}╮{Style.RESET_ALL}')
+    print(f'{spacje}{termc_C_ERR}╭{Style.BRIGHT}{top_line}{Style.NORMAL}╮{Style.RESET_ALL}')
 
     for line in lines:
         print(f'{spacje}{termc_C_ERR}│{Style.RESET_ALL} {line.ljust(naj_linia)} {termc_C_ERR}│{Style.RESET_ALL}')
@@ -234,9 +234,9 @@ def fatalerror(label="FATAL ERROR", message="FATAL ERROR", center=True, clear: b
     klikniecia = 3
     for k in range(3):
         if klikniecia == 1:
-            input(f"Click {klikniecia} time to hide this message")
+            input(f"Click {Style.BRIGHT}{klikniecia}{Style.NORMAL} time to hide this message")
         else:
-            input(f"Click {klikniecia} times to hide this message")
+            input(f"Click {Style.BRIGHT}{klikniecia}{Style.NORMAL} times to hide this message")
         klikniecia = klikniecia - 1
         
     os.system('cls')
